@@ -1,0 +1,85 @@
+html,
+body {
+    background-image: url(../images/pexels-josh-sorenson-995301.jpg);
+    /*Photo by Josh Sorenson from Pexels https://www.pexels.com/photo/close-up-photo-of-drum-set-995301/*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'MODERNA';
+    src: url('../fonts/MODERNA.ttf');
+    /* IE9 Compat Modes */
+    src: url('../fonts/MODERNA.ttf') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/MODERNA.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+.intro {
+    padding: 20px;
+    background-color: rgba(48,61,71,0.8);
+}
+
+#title {
+    font-family: "MODERNA";
+    text-align: center;
+    color:  #9FCBED;
+    font-size: 85px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    opacity: 1!important;
+}
+
+#note {
+    font-family: "MODERNA";
+    letter-spacing: 2px;
+    color:#ACAD6C;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.keys {
+    margin: auto;
+    text-align: center;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 1rem;
+    text-align: center;
+    color:#ACAD6C;
+    background-color: #122A36;
+    margin: 0.6rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.15s;
+}
+
+.playing {
+    transform: scale(1.2);
+    border-color: rgb(255, 198, 0);
+    box-shadow: 0 0 10px rgb(255, 198, 0);
+}
+
+kbd {
+    display: block;
+    font-size: 36px;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
